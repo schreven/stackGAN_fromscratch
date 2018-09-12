@@ -1,0 +1,16 @@
+10/09/18:
+"load_text_folder", import of sentences in dict working.
+"textdict_to_vect" half working. skipthoughts must treat exception when nb of words = 0. 
+
+11/09/18
+In skipthoughts.py, below   
+""for k in ds.keys():
+    if verbose:
+        print k""
+add
+    if k == 0:
+        continue
+(it fixes error related to 0 size sentences)
+
+#coment
+img_list_IDs is the full adress, whereas it could be just the last part (an ID! )
